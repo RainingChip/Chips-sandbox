@@ -14,6 +14,10 @@ config/name="Test learning"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Test learning"
+
 [rendering]
 
 renderer/rendering_method="mobile"
