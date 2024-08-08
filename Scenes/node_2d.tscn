@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj7hoi6c8pjx2"]
+[gd_scene load_steps=3 format=3 uid="uid://bj7hoi6c8pjx2"]
 
 [ext_resource type="PackedScene" uid="uid://cp8g07yc85lwa" path="res://Prefabs/player.tscn" id="1_mxvjr"]
+[ext_resource type="PackedScene" uid="uid://takqmya2s1wt" path="res://Scenes/enemy.tscn" id="2_3vtli"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("1_mxvjr")]
+collision_layer = 0
+
+[node name="Enemy" parent="." instance=ExtResource("2_3vtli")]
+position = Vector2(372, 65)
